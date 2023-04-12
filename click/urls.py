@@ -2,7 +2,7 @@ from django.urls import path
 from . import views  
    
 urlpatterns = [
-    path('click/', views.ListingsProtected.as_view(), name ='listings'),
-    path('click_create/', views.ListingCreateProtected.as_view(), name='listing_create'),
-    path('click_edit/<uuid:pk>/', views.ListingDetailProtected.as_view(), name='listing_edit'),
+    path('click/', views.Click.as_view(), name ='clicks'),
+    path('click_create/', views.ClickCreate.as_view(), name='click_create'),
+    path('click_edit/<uuid:pk>/', views.ClickDetail.as_view(), name='click_edit'),
 ]
