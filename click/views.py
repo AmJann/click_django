@@ -1,3 +1,15 @@
 from django.shortcuts import render
 
-# Create your views here.
+class Click(generics.ListAPIView):
+    queryset = Click.objects.all()
+    serializer_class = ClickSerializer    
+
+
+class ClickCreate(generics.CreateAPIView):
+    queryset = Click.objects.all()
+    serializer_class = ClickSerializer  
+    
+
+class ClickDetail(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = ClickSerializer
+    queryset = Click.objects.all()
