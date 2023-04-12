@@ -1,6 +1,9 @@
 from django.shortcuts import render
+from rest_framework import generics, permissions
+from .serializers import ClickSerializer
+from .models import Click
 
-class Click(generics.ListAPIView):
+class ClickRead(generics.ListAPIView):
     queryset = Click.objects.all()
     serializer_class = ClickSerializer    
 
