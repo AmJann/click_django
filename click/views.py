@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rest_framework import generics, permissions
+from rest_framework import generics
 from .serializers import ClickSerializer
 from .serializers import LocationSerializer
 from .models import Click

@@ -5,7 +5,7 @@ from .models import Location
 class ClickSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Click
-        fields = ('uuid','count')
+        fields = ('uuid','title','count')
 
 class LocationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
