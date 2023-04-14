@@ -4,4 +4,4 @@ from .models import Click
 class ClickSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Click
-        fields = ('uuid','title','count')
+        fields = ('uuid','count')
