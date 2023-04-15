@@ -1,3 +1,4 @@
 CREATE DATABASE click;
 CREATE USER clickuser WITH PASSWORD 'click';
 GRANT ALL PRIVILEGES ON DATABASE click TO clickuser;
+
