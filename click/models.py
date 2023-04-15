@@ -3,7 +3,7 @@ import uuid
 
 class Click(models.Model):
     uuid = models.UUIDField(primary_key=True,unique=True, auto_created=True, default=uuid.uuid4)
-    title = models.CharField(blank=True,default='count')
+    title = models.CharField(max_length=100,blank=True,default='count')
     count = models.CharField(max_length=6,default=0)
 
     def __str__(self):
